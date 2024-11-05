@@ -127,7 +127,9 @@ function DialogAddProduct({ children, onSubmit, defaultValue }) {
               <DialogClose asChild>
                 <Button variant="destructive">Cancel</Button>
               </DialogClose>
-              <Button type="submit">Tạo mới</Button>
+              <Button type="submit">
+                {defaultValue?._id ? "Cập nhật" : "Tạo mới"}
+              </Button>
             </DialogFooter>
           </DialogHeader>
         </form>
